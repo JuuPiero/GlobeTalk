@@ -1,0 +1,83 @@
+.home-container {
+    max-width: 1479px;
+    box-sizing: border-box;
+
+}
+.page-title {
+    text-transform: uppercase;
+    max-width: 830px;
+    margin: 0 auto;
+    word-wrap:break-word;
+    margin-bottom: 100px;
+    text-align: center;
+}
+.page-title span {
+    padding-top: 48px;
+    text-transform: none;
+}
+
+.page-section {
+    flex: 1;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 64px;
+    gap: 40px;
+}
+.section-text {
+    max-width: 729px;
+    box-sizing: border-box;
+}
+.section-title {
+    text-transform: uppercase;
+}
+.section-text p {
+    font-size: 24px;
+    padding-top: 15px;
+}
+
+.cources-container {
+    gap: 15px;
+    box-sizing: border-box;
+}
+.cource-item {
+    width: 291px;
+    height: 369px;
+    border-radius: 20px;
+    position: relative;
+    color: var(--white-color);
+    box-sizing: border-box;
+}
+.cource-item .start-cource {
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    transform: translate(-50%, 70%);
+    max-width: 155px;
+    height: 58px;
+    border-radius: 15px;
+    font-size: 24px;
+}
+.cource-name {
+    text-align: center;
+    max-width: 167px;
+    margin: 0 auto;
+    margin-top: 60px;
+}
+.cource-item:first-child {
+    background-image: linear-gradient(180deg, var(--red-color), var(--gradient-end-color));
+}
+
+.cource-item:nth-child(2) {
+    background-image: linear-gradient(180deg, var(--purple-color), var(--gradient-end-color));
+}
+
+.cource-item:nth-child(3) {
+    background-image: linear-gradient(180deg, var(--green-color), var(--gradient-end-color));
+}
+
+.cource-item:last-child {
+    background-image: linear-gradient(180deg, var(--blue-color), var(--gradient-end-color));
+}
+
+

@@ -1,0 +1,29 @@
+.post {
+    max-width: 1178px;
+    padding: 20px;
+    box-shadow: 0 4px 4px var(--grey-color);
+    border-radius: 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    box-sizing: border-box;
+    gap: 65px;
+    margin-bottom: 40px;
+}
+.post-author {
+    display: flex;
+    gap: 10px;
+    align-items: center;
+}
+.author-avatar {
+    width: 24px;
+    height: 24px;
+}
+.post-summary {
+    color: var(--grey-color);
+}
+
+.post-title {
+    text-transform: uppercase;
+
+}

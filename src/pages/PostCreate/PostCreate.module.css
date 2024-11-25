@@ -1,0 +1,30 @@
+.post-create {
+    flex: 1;
+    max-width: 1140px;
+    margin: 0 auto;
+}
+.editor {
+    width: 100%;
+    height: 600px;
+}
+.create-form {
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
+    align-items: end;
+    gap: 100px;
+}
+.create-form textarea {
+    width: 100%;
+    height: 400px;
+}
+.create-form button {
+    width: 167px;
+    height: 51px;
+    box-sizing: border-box;
+    border-radius: 5rem;
+    /* margin-top: 30px;     */
+}
+.post-create h1 {
+
+}

@@ -1,0 +1,69 @@
+.card {
+    height: 336px;
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    border-radius: 22px;
+    box-shadow: 0 0 10px var(--grey-color);
+}
+
+.card-header {
+    padding: 0 20px;
+    border-radius: 22px 22px 0 0;
+    color: var(--white-color);
+    height: 55%;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    background-repeat: no-repeat; 
+    background-position: center; 
+}
+.card-header h2 {
+    margin-bottom: 10px;
+}
+.card-header p {
+    color: #FFF4A3;
+}
+
+.card-header:first-child {
+    background-image: linear-gradient(180deg, #DA48AE, #5B37EC);
+}
+
+.card-header:nth-child(2) {
+    background-image: linear-gradient(180deg, #73F3CF, #0D6A99);
+}
+
+.card-header:nth-child(3) {
+    background-image: linear-gradient(180deg, #DA48AE, #5B37EC);
+}
+
+.card-header:nth-child(4) {
+    background-image: linear-gradient(180deg, #DA48AE, #5B37EC);
+}
+.card-header:nth-child(5) {
+    background-image: linear-gradient(180deg, #DA48AE, #5B37EC);
+}
+
+.card-header:nth-child(6) {
+    background-image: linear-gradient(180deg, #DA48AE, #5B37EC);
+}
+
+.card-header:last-child {
+    background-image: linear-gradient(180deg, #DA48AE, #5B37EC);
+}
+.card-content {
+    padding: 0 20px;
+}
+.card-content p {
+    width: 260px;
+}
+.card-footer {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    color: var(--grey-color);
+    padding: 10px 20px;
+    border-radius: 0 0 22px 22px;
+}

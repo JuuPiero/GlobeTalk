@@ -1,0 +1,42 @@
+.profile {
+    max-width: 1328px;
+    margin: 0 auto;
+
+}
+.profile-header {
+    position: relative;
+}
+.profile-header > div {
+    position: absolute;
+    transform: translateY(-50%);
+    left: 8%;
+}
+
+.profile-bottom {
+    margin-top: 200px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.profile-box {
+    padding: 15px;
+    border-radius: 22px;
+    box-shadow: 4px 2px 4px var(--grey-color);
+    margin-bottom: 40px;
+    min-width: 450px;
+}
+
+.profile-box > span {
+    display: flex;
+    align-items: start;
+    max-width: 310px;
+    font-size: 20px;
+}
+.profile-box-title {
+    margin-bottom: 15px;
+}
+.save-post-list {
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+}

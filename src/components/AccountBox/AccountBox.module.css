@@ -1,0 +1,43 @@
+.account-box {
+    width: 437px;
+    /* visibility: visible; */
+    font-size: 24px;
+
+}
+
+.account-box-top {
+    box-sizing: border-box;
+    gap: 40px;
+    display: flex;
+}
+.account-box-top img {
+    width: 64px;
+    height: 64px;
+}
+.account-box-top .text {
+    display: flex;
+    flex-direction: column;
+}
+
+
+
+.account-actions {
+    margin-top: 40px;
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    flex: 1;
+
+}
+
+.account-actions a {
+    width: 100%;
+    /* display: block; */
+    border-top: 1px solid #E3E4E9;
+    color: var(--grey-color);
+    padding: 10px;
+}
+
+.account-actions a:nth-child(3) {
+    border: none;
+}

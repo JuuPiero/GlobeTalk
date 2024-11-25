@@ -1,0 +1,40 @@
+.mypost {
+    max-width: 1328px;
+    width: 100%;
+    margin: 0 auto;
+}
+.tabs {
+    border-bottom: 1px solid var(--grey-color);
+    margin: 20px 0;
+}
+
+.tab {
+    margin-right: 20px;
+    color: var(--grey-color);
+    cursor: pointer;
+}
+
+.tab.selected {
+    color: var(--black-color);
+    position: relative;
+}
+.tab.selected::after {
+    content: '';
+    left: 0;
+    right: 0;
+    display: block;
+    position: absolute;
+    width: 100%;
+    height: 4px;
+    background-color: black;
+    transform: translateY(-100%);
+}
+
+.mypost-content > p {
+    font-size: 24px;
+    color: var(--grey-color);
+    margin: 15px 0;
+}
+.mypost-content a {
+    color: var(--orange-color);
+}

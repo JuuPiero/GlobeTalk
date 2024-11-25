@@ -1,0 +1,36 @@
+.list-courses >  h2 {
+    padding: 2rem 0;
+ 
+}
+.courses {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 40px;
+}
+
+
+
+/* FOR DEMO TEST  */
+.courses > div:nth-child(2) > a:first-child {
+    background-image: linear-gradient(180deg, #73F3CF, #0D6A99);
+}
+
+.courses > div:nth-child(3) > a:first-child {
+    background-image: linear-gradient(180deg, #E2E22C, #CD0707);
+}
+
+.courses > div:nth-child(4) > a:first-child {
+    background-image: linear-gradient(180deg, #48DA48, #5B37EC);
+}
+
+.courses > div:nth-child(5) > a:first-child {
+    background-image: linear-gradient(180deg, #A94545, #F2A9A9);
+}
+
+.courses > div:nth-child(6) > a:first-child {
+    background-image: linear-gradient(180deg, #8469E7, #9F8FE0);
+}
+
+.courses > div:nth-child(7) > a:first-child {
+    background-image: linear-gradient(180deg, #DC1D63, #DC749A);
+}
