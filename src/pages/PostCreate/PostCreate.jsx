@@ -6,7 +6,6 @@ import { AuthContext } from "../../context/AuthContext";
 function PostCreate() {
     const [content, setContent] = useState("Tiêu đề");
     const [title, setTitle] = useState("Tiêu đề");
-    // const [posts, setPosts] = useState([])
 
     const [posts, setPosts] = useState(() => {
         const savedPosts = localStorage.getItem('posts');
@@ -43,7 +42,6 @@ function PostCreate() {
         setContent('Tiêu đề')
     }
     useEffect(() => {
-        // console.log(posts); // In ra giá trị mới của posts mỗi khi nó thay đổi
         localStorage.setItem('posts', JSON.stringify(posts));
     }, [posts]);
 
