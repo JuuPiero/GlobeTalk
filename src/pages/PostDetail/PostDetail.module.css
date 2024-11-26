@@ -56,7 +56,11 @@
     padding: 10px;
     border-radius: 5rem 0 0 5rem;
 }
-
+.post-content {
+    font-size: 24px;
+    font-weight: 500;
+    
+}
 .post-content img {
     max-width: 100%;
     height: auto;

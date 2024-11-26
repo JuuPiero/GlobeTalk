@@ -5,9 +5,20 @@ import EllipsisIcon from '../../components/Icons/EllipsisIcon';
 import HeartIcon from '../../components/Icons/HeartIcon';
 import CommentBox from '../../components/Popup/CommentBox';
 import styles from './PostDetail.module.css';
+import { useParams } from 'react-router';
+import { posts as defaultPosts } from '../../utils/utils'
 
 function PostDetail() {
     const [isVisible, setIsVisible] = useState(false);
+
+    const { id } = useParams(); 
+    const [post, setPost] = useState(() => {
+        const posts = [...defaultPosts, ...JSON.parse(localStorage.getItem("posts")) ?? []]
+        const post = posts.find(post => post.id == id)
+        return post || null
+    });
+
+
     const openCommentBox = (e) => {
         setIsVisible(true)
     };
@@ -27,7 +38,7 @@ function PostDetail() {
 
 
             <div className={styles['post-header']}>
-                <h1 className={`${styles['post-title']} mt-0`}>Kakao Talk: giới thiệu về các tính năng nổi bật</h1>
+                <h1 className={`${styles['post-title']} mt-0`}>{post.title}</h1>
                 <div className={styles['post-author']}>
                     <div className={styles['author']}>
                         <span className='mb-1 d-block color-grey'>Published on 04 June 2024 </span>
@@ -40,10 +51,10 @@ function PostDetail() {
                 </div>
             </div>
 
-            <div className={styles['post-content']}>
+            <div className={styles['post-content']}  dangerouslySetInnerHTML={{ __html: post.content }}>
 
 
-                <p>Kakao Talk là một trong những ứng dụng được sử dụng phổ biến tại Hàn Quốc. Vậy ứng dụng này có những tính năng gì?  Hãy cùng mình tìm hiểu chi tiết qua bài viết này nhé!</p>
+                {/* <p>Kakao Talk là một trong những ứng dụng được sử dụng phổ biến tại Hàn Quốc. Vậy ứng dụng này có những tính năng gì?  Hãy cùng mình tìm hiểu chi tiết qua bài viết này nhé!</p>
                 <h2>1. Kakao Talk là gì ?</h2>
                 <ol>
                     <li>hoho</li>
@@ -53,11 +64,10 @@ function PostDetail() {
                 </ol>
 
                 <img alt='' src='/image9.png' />
-                <span>t2fygekhdjk <a href=''>link</a></span>
+                <span>t2fygekhdjk <a href=''>link</a></span> */}
 
 
             </div>
-
 
             <div className={styles['post-footer']}>
                 <span>Tiếng Anh</span>

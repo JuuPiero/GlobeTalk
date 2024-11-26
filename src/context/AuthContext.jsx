@@ -12,13 +12,13 @@ const AuthProvider = ({ children }) => {
         const storedUsername = localStorage.getItem("username");
         if (loggedIn) {
             setIsLoggedIn(true);
-            setUsername(storedUsername || "");
+            setUsername(storedUsername || "Default");
         }
     }, []);
   
-    const login = (username) => {
+    const login = (username = "Default") => {
       localStorage.setItem("isLoggedIn", "true");
-      localStorage.setItem("username", username ?? "default");
+      localStorage.setItem("username", username);
       setIsLoggedIn(true);
       setUsername(username);
     };
