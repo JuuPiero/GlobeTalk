@@ -1,12 +1,12 @@
 import { Link } from "react-router";
 import styles from "./Card.module.css"
 
-function Card({title, type, description, image} ) {
+function Card({id, title, content, description, image} ) {
     return (  
         <div className={styles.card} >
-            <Link to="/course/detail/1" className={styles['card-header']} style={image ? { backgroundImage: `url(${image})` } : {}}>
+            <Link to={"/course/detail/" + id} className={styles['card-header']} style={image ? { backgroundImage: `url(${image})` } : {}}>
                 <h2 >{title ?? "Adverbial Clause"}</h2>
-                <p className="large-text">{type ?? "Định nghĩa"}</p>
+                <p className="large-text">{content ?? "Định nghĩa"}</p>
             </Link>
 
             <div className={styles['card-content']}>

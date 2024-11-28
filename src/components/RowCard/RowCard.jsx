@@ -6,7 +6,7 @@ function RowCard({title, courses = []} ) {
         <div className={styles["list-courses"]}>
             <h2>{title ?? "Bài viết nổi bật"}</h2>
             <div className={styles["courses"]}>
-                {(courses.length == 0) && <>
+                {/* {(courses.length == 0) && <>
                     <Card />
                     <Card />
                     <Card />
@@ -14,16 +14,15 @@ function RowCard({title, courses = []} ) {
                     <Card />
                     <Card />
                     <Card />
-                </>}
+                </>} */}
 
                 {
                     courses.map((course) => (
                         <Card 
                             key={course.id}
-                            title={course.title}
-                            author={course.author}
-                            description={course.description}
-                            image={course.image} />
+                            {...course}
+
+                            />
                     ))
                 }
             </div>
